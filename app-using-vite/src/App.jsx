@@ -1,10 +1,9 @@
+import Temp from "./temp"
 
 function App() {
    return (
     <>
-      <h1>
-        Hello Vite
-      </h1>
+      <Temp />
     </>
   )
 }

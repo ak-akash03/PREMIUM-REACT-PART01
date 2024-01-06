@@ -1,5 +1,10 @@
+import Akash from "./akash";
+
+
 function App() {
-  return <h1>Hello React</h1>;
+  return(
+    <Akash />
+  )
 }
 
 export default App;
