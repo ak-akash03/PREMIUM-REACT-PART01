@@ -2,14 +2,14 @@ import React, { useState } from "react";
 
 function TextForm(props) {
   function convertToUpeperCase() {
-    console.log("clicked to button");
-    console.log(upperCase);
+//     console.log("clicked to button");
+//     console.log(upperCase);
     let newText = upperCase.toUpperCase();
     setUpperCase(newText);
   }
 
   function onChangeFun(event) {
-    console.log("on change");
+//     console.log("on change");
     setUpperCase(event.target.value);
   }
 
