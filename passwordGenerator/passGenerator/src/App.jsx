@@ -12,8 +12,12 @@ function App() {
   return (
     <>
      <h1 className="text-4xl text-center text-white mt-10">Password Generator</h1>
+     <h1 className="text-4xl text-center text-white mt-10">Password Generator</h1>
 
       
+
+
+
     </>
   )
 }
