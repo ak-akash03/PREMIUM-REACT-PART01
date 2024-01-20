@@ -1,6 +1,4 @@
 // import React, { useState } from "react";
-
-
 // function App() {
 
 //   // var val = "Hello Ak"
