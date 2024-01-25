@@ -26,28 +26,45 @@
 
 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+// function App() {
+
+//   const [myName, setMyName] = useState("Hello Ak")
+
+
+//   const changeText = () => {
+//     let val = myName
+
+//     if (val === "Hello Ak")
+//       setMyName("Hello Akash")
+//     else
+//       setMyName("Hello Ak")
+
+//   }
+
+//   return (
+//     <>
+//       <h1>{myName}</h1>
+//       <button className='btn' onClick={changeText}>Change Text</button>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
+import Rule from './componants/rule'
+import ArrayInHooks from './componants/ArrayInHooks'
+import RandomNumberGen from './componants/RandomNumberGen'
 
 function App() {
-
-  const [myName, setMyName] = useState("Hello Ak")
-
-
-  const changeText = () => {
-    let val = myName
-
-    if (val === "Hello Ak")
-      setMyName("Hello Akash")
-    else
-      setMyName("Hello Ak")
-
-  }
-
   return (
-    <>
-      <h1>{myName}</h1>
-      <button className='btn' onClick={changeText}>Change Text</button>
-    </>
+    // <div>App</div>
+    // <Rule />
+    // <ArrayInHooks />
+    <RandomNumberGen/>
   )
 }
 
