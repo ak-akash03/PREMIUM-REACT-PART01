@@ -1,13 +1,25 @@
-import React from 'react'
+import React from "react";
+import { useState } from "react";
 
 function New() {
-      const [myObj, setmyObj] = useState(second)
+  let [myObj, setmyObj] = useState({
+    name: "Akash",
+    age: 20,
+    course: "Bca"
+  });
+  const changeName = () => {
+     
+      setmyObj({ ...myObj, name:"Akash Rathod"})
+
+  }
   return (
     <>
-      <h3>Name: Akash & Age: 20 & Degree: Bca</h3>
-      <button>Update</button>
+      <h3>
+        Name: {myObj.name} & Age: {myObj.age} & Degree: {myObj.course}
+      </h3>
+      <button onClick={changeName}>Update</button>
     </>
-  )
+  );
 }
 
-export default New
+export default New;
