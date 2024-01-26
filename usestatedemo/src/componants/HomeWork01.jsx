@@ -15,25 +15,57 @@ function HomeWork01() {
   const [text, settext] = useState("second");
 
   const LowerCase = () => {
-      settext(text.toLocaleLowerCase())
-  } 
+    settext(text.toLocaleLowerCase());
+  };
 
+  const [toggleText, settoggleText] = useState("Enable Dark Mode");
+
+  const [darkObj, setDarkObj] = useState({
+    color: "white",
+    backgroundColor: "black",
+  });
+
+  const toggleDarkMode = () => {
+    if (darkObj.color == "white") {
+      setDarkObj({
+        color: "black",
+        backgroundColor: "white",
+      });
+      settoggleText("Enable Dark Mode")
+    } else {
+      setDarkObj({
+        color: "white",
+        backgroundColor: "black",
+      });
+      settoggleText("Enable Light Mode")
+    }
+  };
 
   return (
     <>
-      <div>HomeWork</div>
-      <br />
-      <textarea
-        name="textarea"
-        id="text"
-        value={text}
-        cols="35"
-        rows="5"
-        onChange={handleOnchange}
-      ></textarea>
-      <br />
-      <button onClick={UpperCase}>UpperCase </button>
-      <button onClick={LowerCase}>LowerCase </button>
+      <div className="container" style={darkObj}>
+        <div style={darkObj}>HomeWork</div>
+        <br />
+        <textarea
+          style={darkObj}
+          name="textarea"
+          id="text"
+          value={text}
+          cols="35"
+          rows="5"
+          onChange={handleOnchange}
+        ></textarea>
+        <br />
+        <button style={darkObj} onClick={UpperCase}>
+          UpperCase{" "}
+        </button>
+        <button style={darkObj} onClick={LowerCase}>
+          LowerCase{" "}
+        </button>
+        <button style={darkObj} onClick={toggleDarkMode}>
+          {toggleText}
+        </button>
+      </div>
     </>
   );
 }
